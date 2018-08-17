@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+body {
+	background-color: black;
+}
+
+header {
+	text-align: center;
+}
+
+section { 
+	text-align: center;
+}
+
+</style>
+<body>
+<header>
+	<h2> Funcionalidades do javascript </h2>
+	<p> Mudando valores de atributos de uma tag html. </p>
+	<p> Trocando o valor do atrr src da tag imagem. </p>
+
+</header>
+
+<section>
+<button
+	onclick="document.getElementById('myImage').src='pic_bulbon.gif'"> Acende a luz </button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button
+	onclick="document.getElementById('myImage').src='pic_bulboff.gif'"> Apaga a luz </button>
+
+</section>
+
+</body>
+</html>
