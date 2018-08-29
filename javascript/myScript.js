@@ -11,5 +11,5 @@ function outrafuncao(){
 function myFunc(){
 	console.log("rodou sim ou nao?");
 	document.getElementById('demo2').innerHTML = " Consegui um ponto positivo? ";
-	alert('HELLO ITS ME');
+	alert('NAO');
 }
