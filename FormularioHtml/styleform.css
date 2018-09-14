@@ -1,0 +1,45 @@
+body{
+	font-family: Verdana;
+	font-size: 12pt;
+}
+input, select{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color:lightblue;
+		
+}
+#form{
+	position: relative;
+	top: 20px;
+	left: 20px;
+	
+}
+h2{ 
+	Background-color:lightgrey;
+	height:7px;
+	width: 700px;
+}
+p{
+	background-color:lightgrey;
+	width: 700px;
+}
+textarea{
+	background-color:lightblue;
+	width:700px;
+	
+}
+.pt{ 
+	border-style: solid;
+	width: 700px;
+	
+}
+
+.st{
+	border-style: solid;
+	width: 700px;
+}
+.tt{
+	border-style: solid;
+	width: 700px;
+}
+

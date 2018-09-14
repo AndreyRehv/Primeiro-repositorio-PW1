@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="styleform.css">
+	<script src="formijavascript.js"></script>
+	</head>
+	<body>
+			<h3><b>Formulario de Solicitação de informação(Pessoa Física)</h3></b>
+			<h2> </h2>
+			<p><b>As informações abaixo são obrigatorias</b></p>
+		<div class="pt">
+			<form name= "t1" action="">
+				<b>Nome:</b><input type="text" name="nome" value="" size="85" pattern="[a-zA-Z\s]+$" required="yes"><br>
+				<b>CPF:</b><input type="text" name="cpf" value="" size="25" pattern="[0-9]{11}" required="yes"><br>
+				Ou, se preferir, informar outro documento de identificação (RG, CNH, Passaporte, RNE ou outro documento válido. Se a opção for por RG, indicar órgão emissor e UF):<br>
+				<b>Tipo de documento:</b><input type="text" name="documento" value="" size="30" pattern="[A-Za-z\s]+$" required="yes">
+				<b>Nº:</b><input type="text" name="numero" value="" size="5" pattern="[0-9]" required="yes"><br>
+				<b>Endereço eletronico(email):</b><input type="text" name="email" value="" size="60" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}+$" required="yes"><br>
+				<b>ou</b><br>
+				<b>Endereço fisico(Rua, nº, complemento, bairro):</b><br><input type="text" name="endereço" value="" size="90" pattern="[A-Za-z0-9]+$" required="yes"><br>
+				<b>Cidade:</b><input type="text" name="cidade" value="" size="50" pattern="[a-zA-Z]+$" required="yes"> 
+				<b>Estado:</b><input type="text" name="estado" value="" size="1" pattern="[A-Z]" required="yes">
+				<b>UF:</b><input type="text" name="uf" value="" size="1" pattern="[A-Z]" required="yes"><br>
+				<b>CEP:</b> <input type="text" name="cep" value="" size="15" pattern="[0-9]{8}" required="yes">
+				<b>País:</b><input type="text" name="país" value="" size="20" pattern="[a-zA-Z]" required="yes"><br>
+			</form>
+		</div>
+			<p><b>Os campos a seguir são opcionais e se preenchidos contribuirão para a melhora de nossos serviços</b></p>
+		<div class="st">
+			<form action="">
+				<b>Sexo:</b> Masculino<input type="radio" name="sexo" value="Masculino"> Feminino<input type="radio" name="sexo" value="feminino" required="yes">
+				<b>Data de nascimento:</b>	<input type="date" name="data_aniversario"><br><br>
+				<b>Escolaridade:</b><br>
+				<input type="radio" name="escola" value="">Sem instrução formal <input type="radio" name="escola" value="">Ensino Superior <input type="radio" name="escola" value="">Doutorado<br>
+				<input type="radio" name="escola" value="">Ensino Fundamental <input type="radio" name="escola" value="">Especialização<br>
+				<input type="radio" name="escola" value="">Ensino Médio <input type="radio" name="escola" value="">Mestrado<br>
+				<b>Ocupação principal / Profissão</b><br>
+				<input type="radio" name="escola" value="">Emprego-Setor privado <input type="radio" name="escola" value=""> Pesquisador <input type="radio" name="escola" value="">Servidor público estadual<br>
+				<input type="radio" name="escola" value="">Jornalista <input type="radio" name="escola" value="">Professor <input type="radio" name="escola" value="">Servidor público municipal<br>
+				<input type="radio" name="escola" value="">Membro do partido politico <input type="radio" name="escola" value="">Estudante <input type="radio" name="escola" value="">Membro da ONG nacional<br>
+				<input type="radio" name="escola" value="">Representante de sindicato <input type="radio" name="escola" value="">Empresário/Empreendedor <input type="radio" name="escola" value="">Membro de ONG internacional<br>
+				<input type="radio" name="escola" value="">Profissão Liberal/Autônomo <input type="radio" name="escola" value="">Servidor público federal<br>
+				<input type="radio" name="escola" value="">Outras<br>
+				<b>Telefone:</b>(<input type="text" name="tel" value="" size="1" pattern="[0-9]">) <input type="text" name="tel" value="" size="20" pattern="[0-9]">
+							
+			</form>
+		</div>
+			<p><b>Especificação do pedido de acesso à informação</b></p>
+		<div class="tt">
+			<form action="">
+				<b>Órgão/Entidade destinatário do pedido:</b><br>
+				<input type="text" name="destinario" value="" size="90" pattern="[A-Za-z0-9]" required="yes"><br>
+				<b>Forma preferencial  de recebimento da resposta</b><br>
+				<input type="radio" name="escola" value="">Buscar/Consultar pessoalmente <input type="radio" name="escola" value="">E-mail <input type="radio" name="escola" value="">Por carta(com custo)<br>
+				<b>Especificação do pedido:</b><br>
+				<textarea rows="6" cols="50"></textarea><br>
+			</form>
+		</div>
+		<input type="button" id="btnCarregar" onclick="validaformulario()" value="Enviar">
+	</body>
+	
+	
+</html>
