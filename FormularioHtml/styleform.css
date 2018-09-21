@@ -1,5 +1,5 @@
 body{
-	font-family: Verdana;
+	font-family: arial;
 	font-size: 12pt;
 }
 input, select{
@@ -24,8 +24,9 @@ p{
 	width: 700px;
 }
 textarea{
+	resize: none;
 	background-color:lightblue;
-	width:700px;
+	width:685px;
 	
 }
 .pt{ 
@@ -42,4 +43,3 @@ textarea{
 	border-style: solid;
 	width: 700px;
 }
-
